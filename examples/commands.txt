@@ -1,0 +1,51 @@
+RAG — the distilled commands
+====================================================================
+Run everything from inside rag-lab/. <q> is a question in
+quotes; <file> is a document of yours.
+
+FIRST CONTACT (chapters 3-4)
+--------------------------------------------------------------------
+  python3 --version                # 3.12.3 in the lab
+  python3 chunk.py                 # show the chunks
+                                   # smoke test: "Total: 26 chunks"
+
+BUILDING THE STORE (chapter 6)
+--------------------------------------------------------------------
+  python3 build_index.py           # chunk + weight + store
+  sqlite3 rag.db "SELECT COUNT(*) FROM chunks;"
+  sqlite3 rag.db "SELECT * FROM idf WHERE term = 'belt';"
+  sqlite3 rag.db "SELECT text FROM chunks \
+    WHERE id = 'bramble-mk2-manual#5';"
+                                   # read one chunk whole
+
+RETRIEVAL ONLY (chapter 7)
+--------------------------------------------------------------------
+  python3 search.py "<q>"          # ranked chunks + scores,
+                                   # no answer produced
+  python3 search.py "belt tension" # manual #5 wins at 0.611
+
+ASKING (chapters 8-9)
+--------------------------------------------------------------------
+  python3 ask.py "<q>"             # retrieval, the grounded
+                                   # prompt printed in full,
+                                   # then the stand-in's answer
+  python3 ask.py "What oil should I use for the polisher bearings?"
+  python3 ask.py "What is the spindle speed of the Bramble Mk III?"
+                                   # a trap: the honest answer
+                                   # is "The documents do not say."
+
+FRESHNESS (chapter 10)
+--------------------------------------------------------------------
+  cp <file> docs/                  # admit a new document
+  python3 build_index.py           # rebuild: the whole update
+  python3 ask.py "<q>"             # ask the question only the
+                                   # new document can answer
+
+A REAL MODEL INSTEAD OF THE STAND-IN (chapter 9, documented only)
+--------------------------------------------------------------------
+  curl -s -m 3 http://localhost:11434/api/tags
+                                   # is a model server there?
+                                   # (the lab's answer was no: t06)
+  curl http://localhost:11434/api/chat -d '{...}'
+                                   # the grounded prompt, verbatim,
+                                   # as the message content

@@ -1,0 +1,26 @@
+$ python3 search.py "belt tension"
+Question: belt tension
+
+1. bramble-mk2-manual#5  score 0.611
+   Checking the belt: Check the belt tension every 40 hours of running. Press the...
+2. bramble-mk2-manual#2  score 0.093
+   About this machine: The Bramble Mk II is a bench polisher for small metal...
+
+$ python3 search.py "spring regatta"
+Question: spring regatta
+
+1. harbourlight-newsletter#5  score 0.499
+   The spring regatta: The spring regatta is on Saturday 14 June at Millpond Lake....
+2. millpond-regatta-rules#1  score 0.301
+   Millpond Regatta Rules Harbourlight Model Boat Club...
+3. harbourlight-newsletter#1  score 0.257
+   Harbourlight Model Boat Club Newsletter, spring edition...
+4. harbourlight-newsletter#2  score 0.120
+   From the secretary: Welcome to the spring edition. The lake is clear of ice,...
+
+$ python3 search.py "life jacket pontoon"
+Question: life jacket pontoon
+
+1. millpond-regatta-rules#4  score 0.444
+   Safety on the pontoon: Children under 12 must wear a life jacket while they...
+

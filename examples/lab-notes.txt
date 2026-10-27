@@ -1,0 +1,55 @@
+The lab — one small pipeline, three invented documents,
+no model server
+====================================================================
+
+The lab is the pipeline of this guide, written with the
+Python standard library only, on the build machine (an
+Ubuntu 24.04 sandbox, 2 CPUs, 7.7 GB RAM):
+
+  * Python 3.12.3. ragcore.py holds chunking and TF-IDF;
+    chunk.py, build_index.py, search.py and ask.py are the
+    four faces. Nothing was installed.
+  * The documents are invented for the guide: a workshop
+    manual for the "Bramble Mk II" bench polisher, a model
+    boat club newsletter, and its regatta rules — 26 chunks
+    in all, small enough that every number in the guide can
+    be checked by hand.
+  * The store is one SQLite file, rag.db, 122880 bytes:
+    26 chunks, 437 terms, 658 postings.
+  * There is no language model in the lab. The answering
+    step is a mechanical stand-in that quotes a retrieved
+    sentence or refuses; see chapter 9 for why, and for the
+    documented-only swap that replaces it with a real
+    model served by Ollama. A curl check for a model
+    server (localhost, and one known serving address) is
+    recorded in transcript t06: neither was reachable from
+    the build machine.
+
+What the lab ran, in rag-lab/transcripts/:
+
+  t00  versions: Python 3.12.3, platform string
+  t01  chunk.py over the three documents: 26 chunks
+  t02  build_index.py, then the store read back with
+       sqlite3 — counts, idf values, the belt postings
+  t03  search.py on three questions: ranked chunks, scores
+  t04  ask.py on six questions, prompts in full: four
+       cited answers, two exact refusals
+  t05  freshness: refused question, notice added, rebuild,
+       same question answered from the new chunk
+  t06  the model-server checks (both unreachable)
+  t07  the nine-question test set of chapter 11: seven
+       expected answers, two expected refusals, no
+       invented answers
+
+Calibration notes, kept because the guide quotes them:
+
+  * The first version of the chunker made one-word chunks
+    out of headings ("Dues", "Safety"). Headings of six
+    words or fewer are now glued to the block that follows
+    them (chapter 4).
+  * The oil question initially retrieved the right chunk
+    but quoted its "grease is forbidden" neighbour
+    sentence — the word "use" in the question matched it.
+    The manual's sentence was rewritten so the fact stands
+    in one sentence; the incident is why chapter 11 scores
+    answers instead of impressions.

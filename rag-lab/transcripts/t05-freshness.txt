@@ -1,0 +1,22 @@
+$ python3 ask.py "Where are the spare drive belts kept?"
+--- End of prompt ---
+
+Stand-in answer (mechanical, not a language model):
+The documents do not say.
+
+$ cp workshop-notice-june.txt docs/
+$ python3 build_index.py
+bramble-mk2-manual.txt: 12 chunks
+harbourlight-newsletter.txt: 8 chunks
+millpond-regatta-rules.txt: 6 chunks
+workshop-notice-june.txt: 1 chunks
+Stored 27 chunks
+Stored 447 distinct terms
+Stored 691 postings (term-in-chunk weights)
+Database: rag.db (122880 bytes)
+
+$ python3 ask.py "Where are the spare drive belts kept?"
+
+Stand-in answer (mechanical, not a language model):
+Workshop notice, pinned up 1 June: Spare parts for the polisher: From the start of June, spare BP-114 drive belts and FP-150 felt pads for the workshop polisher are kept in the grey cabinet by the door of the shed.
+[from workshop-notice-june#1]

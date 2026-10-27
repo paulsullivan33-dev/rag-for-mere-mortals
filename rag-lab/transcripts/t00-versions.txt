@@ -1,0 +1,15 @@
+$ python3 --version
+Python 3.12.3
+$ python3 -c "import platform; print(platform.platform())"
+Linux-7.0.0-39-generic-x86_64-with-glibc2.39
+$ ls
+__pycache__
+ask.py
+build_index.py
+chunk.py
+docs
+rag.db
+ragcore.py
+search.py
+transcripts
+workshop-notice-june.txt

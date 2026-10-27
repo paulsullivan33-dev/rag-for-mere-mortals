@@ -1,0 +1,166 @@
+$ python3 ask.py "What oil should I use for the polisher bearings?"
+Retrieved:
+  bramble-mk2-manual#6  score 0.477
+  harbourlight-newsletter#6  score 0.158
+  bramble-mk2-manual#9  score 0.145
+  bramble-mk2-manual#1  score 0.134
+
+--- The grounded prompt (what a real model would receive) ---
+Answer the question using only the sources below.
+Do not use any other knowledge.
+Cite the source id for every fact you state, like this: [source: manual#3]
+If the sources do not contain the answer, reply with exactly:
+The documents do not say.
+
+Sources:
+[source: bramble-mk2-manual#6] Oiling and brushes: Oil the bearings every 100 hours of running, using two drops of light machine oil, ISO VG 32, in the oil cup at each end of the spindle. Grease is forbidden: it holds polishing dust and wears the bearings faster than running dry.
+[source: harbourlight-newsletter#6] A new machine in the workshop: The club has bought a second-hand Bramble Mk II bench polisher for the workshop. It will polish propellers, fittings, and anything else the fleet brings in. The workshop manual for the polisher is kept in the shed, on the shelf above the bench. Please read the safety page of the manual before your first use, and leave the machine unplugged when you finish.
+[source: bramble-mk2-manual#9] When something is wrong: If the polisher vibrates in use, first check that the wheel is balanced and that the bench bolts are tight. A wheel that has taken a knock can lose a chunk of felt and shake the whole bench.
+[source: bramble-mk2-manual#1] Bramble Mk II Bench Polisher Workshop Manual, third edition
+
+Question: What oil should I use for the polisher bearings?
+Answer:
+--- End of prompt ---
+
+Stand-in answer (mechanical, not a language model):
+Oiling and brushes: Oil the bearings every 100 hours of running, using two drops of light machine oil, ISO VG 32, in the oil cup at each end of the spindle.
+[from bramble-mk2-manual#6]
+
+$ python3 ask.py "How often should I check the belt tension?"
+Retrieved:
+  bramble-mk2-manual#5  score 0.489
+  bramble-mk2-manual#9  score 0.096
+  bramble-mk2-manual#4  score 0.079
+  bramble-mk2-manual#2  score 0.065
+
+--- The grounded prompt (what a real model would receive) ---
+Answer the question using only the sources below.
+Do not use any other knowledge.
+Cite the source id for every fact you state, like this: [source: manual#3]
+If the sources do not contain the answer, reply with exactly:
+The documents do not say.
+
+Sources:
+[source: bramble-mk2-manual#5] Checking the belt: Check the belt tension every 40 hours of running. Press the belt midway between the pulleys with one finger. The belt should move 8 to 10 mm. If it moves more than 12 mm, slide the motor back on its rails until the tension is right, then tighten the two rail bolts. The drive belt is part number BP-114.
+[source: bramble-mk2-manual#9] When something is wrong: If the polisher vibrates in use, first check that the wheel is balanced and that the bench bolts are tight. A wheel that has taken a knock can lose a chunk of felt and shake the whole bench.
+[source: bramble-mk2-manual#4] Everyday use: Start the machine and let it reach full speed before you offer work to the wheel. Hold the piece with both hands and rest your forearms on the bench edge. Use a light touch: pressing hard slows the wheel, overheats the piece, and wears the felt pads out early. Work in short passes, and turn the piece often so the finish stays even.
+[source: bramble-mk2-manual#2] About this machine: The Bramble Mk II is a bench polisher for small metal and wooden parts. A 370 watt motor drives two polishing wheels through a single belt. The no-load spindle speed is 2,950 rpm, the wheels are 150 mm in diameter, and the machine weighs 11 kg. It is built for a workshop bench, bolted down through the four holes in its base.
+
+Question: How often should I check the belt tension?
+Answer:
+--- End of prompt ---
+
+Stand-in answer (mechanical, not a language model):
+Checking the belt: Check the belt tension every 40 hours of running.
+[from bramble-mk2-manual#5]
+
+$ python3 ask.py "When is the spring regatta?"
+Retrieved:
+  harbourlight-newsletter#5  score 0.499
+  millpond-regatta-rules#1  score 0.301
+  harbourlight-newsletter#1  score 0.257
+  harbourlight-newsletter#2  score 0.120
+
+--- The grounded prompt (what a real model would receive) ---
+Answer the question using only the sources below.
+Do not use any other knowledge.
+Cite the source id for every fact you state, like this: [source: manual#3]
+If the sources do not contain the answer, reply with exactly:
+The documents do not say.
+
+Sources:
+[source: harbourlight-newsletter#5] The spring regatta: The spring regatta is on Saturday 14 June at Millpond Lake. Registration opens at 9.30 in the morning and the first race starts at 10.30. The full rules are in the separate regatta rules sheet, which the starter will have on the day. Spectators are welcome, and the tea tent will be open all day.
+[source: millpond-regatta-rules#1] Millpond Regatta Rules Harbourlight Model Boat Club
+[source: harbourlight-newsletter#1] Harbourlight Model Boat Club Newsletter, spring edition
+[source: harbourlight-newsletter#2] From the secretary: Welcome to the spring edition. The lake is clear of ice, the shed has a new roof, and the sailing season opens this month. This newsletter carries the dates for your diary, the dues reminder, and news of a new machine in the workshop.
+
+Question: When is the spring regatta?
+Answer:
+--- End of prompt ---
+
+Stand-in answer (mechanical, not a language model):
+The spring regatta: The spring regatta is on Saturday 14 June at Millpond Lake.
+[from harbourlight-newsletter#5]
+
+$ python3 ask.py "How much are the club dues for adults?"
+Retrieved:
+  harbourlight-newsletter#4  score 0.345
+  harbourlight-newsletter#1  score 0.106
+  millpond-regatta-rules#1  score 0.102
+  harbourlight-newsletter#2  score 0.091
+
+--- The grounded prompt (what a real model would receive) ---
+Answer the question using only the sources below.
+Do not use any other knowledge.
+Cite the source id for every fact you state, like this: [source: manual#3]
+If the sources do not contain the answer, reply with exactly:
+The documents do not say.
+
+Sources:
+[source: harbourlight-newsletter#4] Dues: Annual dues are 24 dollars for adults and 8 dollars for juniors. Dues cover the lake licence, the shed rent, and insurance for club events. Please pay the treasurer before the end of April so the insurance list stays current. New members joining after September pay half dues for their first year.
+[source: harbourlight-newsletter#1] Harbourlight Model Boat Club Newsletter, spring edition
+[source: millpond-regatta-rules#1] Millpond Regatta Rules Harbourlight Model Boat Club
+[source: harbourlight-newsletter#2] From the secretary: Welcome to the spring edition. The lake is clear of ice, the shed has a new roof, and the sailing season opens this month. This newsletter carries the dates for your diary, the dues reminder, and news of a new machine in the workshop.
+
+Question: How much are the club dues for adults?
+Answer:
+--- End of prompt ---
+
+Stand-in answer (mechanical, not a language model):
+Dues: Annual dues are 24 dollars for adults and 8 dollars for juniors.
+[from harbourlight-newsletter#4]
+
+$ python3 ask.py "What is the spindle speed of the Bramble Mk III?"
+Retrieved:
+  bramble-mk2-manual#1  score 0.240
+  bramble-mk2-manual#2  score 0.196
+  bramble-mk2-manual#12  score 0.095
+  harbourlight-newsletter#6  score 0.095
+
+--- The grounded prompt (what a real model would receive) ---
+Answer the question using only the sources below.
+Do not use any other knowledge.
+Cite the source id for every fact you state, like this: [source: manual#3]
+If the sources do not contain the answer, reply with exactly:
+The documents do not say.
+
+Sources:
+[source: bramble-mk2-manual#1] Bramble Mk II Bench Polisher Workshop Manual, third edition
+[source: bramble-mk2-manual#2] About this machine: The Bramble Mk II is a bench polisher for small metal and wooden parts. A 370 watt motor drives two polishing wheels through a single belt. The no-load spindle speed is 2,950 rpm, the wheels are 150 mm in diameter, and the machine weighs 11 kg. It is built for a workshop bench, bolted down through the four holes in its base.
+[source: bramble-mk2-manual#12] Safety: Wear eye protection whenever the machine is running. Tie back loose sleeves and hair: a polishing wheel grabs cloth faster than you can let go. Never leave the machine running unattended, and switch off at the wall when you finish. The Bramble Mk II is not waterproof, so keep drinks and coolant bottles off the same bench.
+[source: harbourlight-newsletter#6] A new machine in the workshop: The club has bought a second-hand Bramble Mk II bench polisher for the workshop. It will polish propellers, fittings, and anything else the fleet brings in. The workshop manual for the polisher is kept in the shed, on the shelf above the bench. Please read the safety page of the manual before your first use, and leave the machine unplugged when you finish.
+
+Question: What is the spindle speed of the Bramble Mk III?
+Answer:
+--- End of prompt ---
+
+Stand-in answer (mechanical, not a language model):
+The documents do not say.
+
+$ python3 ask.py "Who won the spring regatta last year?"
+Retrieved:
+  harbourlight-newsletter#5  score 0.260
+  millpond-regatta-rules#1  score 0.157
+  harbourlight-newsletter#1  score 0.134
+  harbourlight-newsletter#2  score 0.063
+
+--- The grounded prompt (what a real model would receive) ---
+Answer the question using only the sources below.
+Do not use any other knowledge.
+Cite the source id for every fact you state, like this: [source: manual#3]
+If the sources do not contain the answer, reply with exactly:
+The documents do not say.
+
+Sources:
+[source: harbourlight-newsletter#5] The spring regatta: The spring regatta is on Saturday 14 June at Millpond Lake. Registration opens at 9.30 in the morning and the first race starts at 10.30. The full rules are in the separate regatta rules sheet, which the starter will have on the day. Spectators are welcome, and the tea tent will be open all day.
+[source: millpond-regatta-rules#1] Millpond Regatta Rules Harbourlight Model Boat Club
+[source: harbourlight-newsletter#1] Harbourlight Model Boat Club Newsletter, spring edition
+[source: harbourlight-newsletter#2] From the secretary: Welcome to the spring edition. The lake is clear of ice, the shed has a new roof, and the sailing season opens this month. This newsletter carries the dates for your diary, the dues reminder, and news of a new machine in the workshop.
+
+Question: Who won the spring regatta last year?
+Answer:
+--- End of prompt ---
+
+Stand-in answer (mechanical, not a language model):
+The documents do not say.
+

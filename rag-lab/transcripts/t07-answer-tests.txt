@@ -1,0 +1,45 @@
+$ python3 ask.py "What oil should I use for the polisher bearings?"
+Stand-in answer (mechanical, not a language model):
+Oiling and brushes: Oil the bearings every 100 hours of running, using two drops of light machine oil, ISO VG 32, in the oil cup at each end of the spindle.
+[from bramble-mk2-manual#6]
+
+$ python3 ask.py "How often should I check the belt tension?"
+Stand-in answer (mechanical, not a language model):
+Checking the belt: Check the belt tension every 40 hours of running.
+[from bramble-mk2-manual#5]
+
+$ python3 ask.py "When is the spring regatta?"
+Stand-in answer (mechanical, not a language model):
+The spring regatta: The spring regatta is on Saturday 14 June at Millpond Lake.
+[from harbourlight-newsletter#5]
+
+$ python3 ask.py "How much are the club dues for adults?"
+Stand-in answer (mechanical, not a language model):
+Dues: Annual dues are 24 dollars for adults and 8 dollars for juniors.
+[from harbourlight-newsletter#4]
+
+$ python3 ask.py "What should I do if the polisher vibrates?"
+Stand-in answer (mechanical, not a language model):
+When something is wrong: If the polisher vibrates in use, first check that the wheel is balanced and that the bench bolts are tight.
+[from bramble-mk2-manual#9]
+
+$ python3 ask.py "When are the prizes presented?"
+Stand-in answer (mechanical, not a language model):
+Prizes: Prizes are presented at 4 in the afternoon on the bank by the tea tent.
+[from millpond-regatta-rules#6]
+
+$ python3 ask.py "What are the four racing classes?"
+Stand-in answer (mechanical, not a language model):
+Classes: Racing is in four classes: sail, steam, electric fast, and electric scale.
+[from millpond-regatta-rules#2]
+
+$ python3 ask.py "What is the spindle speed of the Bramble Mk III?"
+
+Stand-in answer (mechanical, not a language model):
+The documents do not say.
+
+$ python3 ask.py "Who won the spring regatta last year?"
+
+Stand-in answer (mechanical, not a language model):
+The documents do not say.
+

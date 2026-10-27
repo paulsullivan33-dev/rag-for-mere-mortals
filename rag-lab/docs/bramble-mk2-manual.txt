@@ -1,0 +1,106 @@
+Bramble Mk II Bench Polisher
+Workshop Manual, third edition
+
+About this machine
+
+The Bramble Mk II is a bench polisher for
+small metal and wooden parts. A 370 watt
+motor drives two polishing wheels through
+a single belt. The no-load spindle speed
+is 2,950 rpm, the wheels are 150 mm in
+diameter, and the machine weighs 11 kg.
+It is built for a workshop bench, bolted
+down through the four holes in its base.
+
+Fitting the wheels
+
+Unplug the machine before you change a
+wheel. Slide the wheel onto the spindle,
+fit the flange with its curved side
+against the wheel, and tighten the nut
+firmly by hand, then a quarter turn with
+the spanner in the drawer under the
+bench. The left-hand spindle has a
+left-hand thread, so its nut tightens
+anticlockwise.
+
+Everyday use
+
+Start the machine and let it reach full
+speed before you offer work to the wheel.
+Hold the piece with both hands and rest
+your forearms on the bench edge. Use a
+light touch: pressing hard slows the
+wheel, overheats the piece, and wears the
+felt pads out early. Work in short
+passes, and turn the piece often so the
+finish stays even.
+
+Checking the belt
+
+Check the belt tension every 40 hours of
+running. Press the belt midway between
+the pulleys with one finger. The belt
+should move 8 to 10 mm. If it moves more
+than 12 mm, slide the motor back on its
+rails until the tension is right, then
+tighten the two rail bolts. The drive
+belt is part number BP-114.
+
+Oiling and brushes
+
+Oil the bearings every 100 hours of
+running, using two drops of light
+machine oil, ISO VG 32, in the oil cup
+at each end of the spindle. Grease is
+forbidden: it holds polishing dust and
+wears the bearings faster than running
+dry.
+
+Inspect the carbon brushes at 500 hours.
+Replace a brush when it is shorter than
+6 mm. Brushes are supplied as a pair,
+part number CB-500, and both must be
+changed together.
+
+Felt pads and compound
+
+Replace the felt pads every six months,
+sooner if the finish turns streaky. The
+pads are part number FP-150. Use the grey
+compound for cutting back and the white
+compound for the final polish. Keep the
+two compounds on separate pads: a pad
+that has held grey compound will never
+give a clean final finish.
+
+When something is wrong
+
+If the polisher vibrates in use, first
+check that the wheel is balanced and
+that the bench bolts are tight. A wheel
+that has taken a knock can lose a chunk
+of felt and shake the whole bench.
+
+If the motor hums but the spindle does
+not turn, the starter capacitor has
+probably failed. The capacitor is part
+number CP-77, and it lives under the
+cover at the back of the motor.
+
+If the finish is streaked even with a
+fresh pad, the pad has picked up old
+compound. Dress the pad with the rake,
+or fit a new one.
+
+Safety
+
+Wear eye protection whenever the machine
+is running. Tie back loose sleeves and
+hair: a polishing wheel grabs cloth
+faster than you can let go. Never leave
+the machine running unattended, and
+switch off at the wall when you finish.
+The Bramble Mk II is not waterproof, so
+keep drinks and coolant bottles off the
+same bench.

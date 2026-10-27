@@ -1,0 +1,18 @@
+$ python3 build_index.py
+bramble-mk2-manual.txt: 12 chunks
+harbourlight-newsletter.txt: 8 chunks
+millpond-regatta-rules.txt: 6 chunks
+Stored 26 chunks
+Stored 437 distinct terms
+Stored 658 postings (term-in-chunk weights)
+Database: rag.db (122880 bytes)
+$ sqlite3 rag.db "SELECT COUNT(*) FROM chunks;"
+26
+$ sqlite3 rag.db "SELECT COUNT(*) FROM idf;"
+437
+$ sqlite3 rag.db "SELECT * FROM idf WHERE term IN ('belt', 'regatta', 'the');"
+belt|3.19722457733622
+regatta|3.19722457733622
+$ sqlite3 rag.db "SELECT term, chunk_id, ROUND(weight, 2) FROM postings WHERE term = 'belt' ORDER BY weight DESC;"
+belt|bramble-mk2-manual#5|15.99
+belt|bramble-mk2-manual#2|3.2
